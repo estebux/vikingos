@@ -9,58 +9,87 @@
 <body>
     <header>
         <h1>Vikingos</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="./pages/serie/">Sobre la serie</a>
-            <a href="./pages/elenco/">Elenco</a>
-            <a href="./pages/temporadas/">Temporadas</a>
-            <a href="./pages/curiosidades/">Curiosidades</a>
-            <a href="./pages/contacto/">Contacto</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="pages/serie/index.html">Sobre la serie</a></li>
+                <li><a href="pages/elenco/index.html">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="pages/curiosidades/index.html">Curiosidades</a></li>
+                <li><a href="pages/contacto/index.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Bienvenidos al mundo de Vikingos</h2>
-            <img src="images/portada.jpg" alt="Portada de la serie Vikingos">
-            <p>Vikingos es una serie de televisión que cuenta las aventuras de Ragnar Lothbrok, un guerrero vikingo que sueña con explorar nuevas tierras y conquistar territorios desconocidos.</p>
+            <h2>Un viaje al mundo de Vikingos</h2>
+            <figure>
+                <img src="images/portada.jpg" alt="Portada de la serie Vikingos">
+                <figcaption>Portada de la serie Vikingos</figcaption>
+            </figure>
+            <p>Todo empieza con una inquietud de Ragnar Lothbrok: ¿qué habrá del otro lado del mar? Ese deseo de salir a explorar pone en marcha una historia de viajes, batallas y decisiones que afectan a toda su familia.</p>
         </section>
         <section>
             <h2>Sobre la serie</h2>
             <article>
-                <img src="images/vikingos.jpg" alt="Vikingos">
+                <figure>
+                    <img src="images/vikingos.jpg" alt="Vikingos">
+                    <figcaption>Vikingos</figcaption>
+                </figure>
                 <h3>Una historia de conquistas</h3>
-                <p>La historia comienza con Ragnar y su deseo de navegar hacia el oeste. A lo largo de la serie se muestran batallas, viajes, alianzas y conflictos entre diferentes pueblos.</p>
-                <p>La serie combina personajes históricos con elementos de las leyendas nórdicas.</p>
+                <p>Ragnar quiere navegar hacia el oeste, aunque no todos estén de acuerdo. Convencer a otros de acompañarlo es apenas el primer desafío: después llegan las alianzas, las disputas y el peso de sus propias decisiones.</p>
+                <p>Parte del atractivo está en esa mezcla de historia y leyendas nórdicas, con personajes que también dudan, se equivocan y cambian de rumbo.</p>
             </article>
         </section>
-        <section>
+        <section class="tarjetas">
             <h2>Personajes principales</h2>
             <article>
                 <h3>Ragnar Lothbrok</h3>
-                <img src="images/ragnar.jpg" alt="Ragnar Lothbrok">
-                <p>Ragnar es uno de los personajes principales de la serie. Es un guerrero y explorador que busca descubrir nuevas tierras.</p>
+                <figure>
+                    <img src="images/ragnar.jpg" alt="Ragnar Lothbrok">
+                    <figcaption>Ragnar Lothbrok</figcaption>
+                </figure>
+                <p>Ragnar siempre está pensando en lo que hay más allá. Su curiosidad lo impulsa a viajar, pero su ambición también le trae problemas.</p>
             </article>
             <article>
                 <h3>Lagertha</h3>
-                <img src="images/ragnar_laghertha.jpg" alt="Ragnar y Lagertha">
-                <p>Lagertha es una reconocida guerrera vikinga. Se destaca por su valentía, su capacidad para luchar y su liderazgo.</p>
+                <figure>
+                    <img src="images/ragnar_lagherta.jpg" alt="Ragnar y Lagertha">
+                    <figcaption>Ragnar y Lagertha</figcaption>
+                </figure>
+                <p>Lagertha sabe pelear y hacerse escuchar. Tiene sus propios objetivos y defiende su lugar, incluso cuando eso la enfrenta a quienes quiere.</p>
             </article>
             <article>
                 <h3>Floki</h3>
-                <img src="images/floki.jpg" alt="Floki">
-                <p>Floki es amigo de Ragnar y un experto constructor de barcos. Su conocimiento permite realizar algunos de los viajes más importantes de la historia.</p>
+                <figure>
+                    <img src="images/floki.jpg" alt="Floki">
+                    <figcaption>Floki</figcaption>
+                </figure>
+                <p>Sin los barcos de Floki, los planes de Ragnar quedarían en tierra. Es un amigo ingenioso e impredecible, muy ligado a sus creencias.</p>
             </article>
         </section>
         <section>
             <h2>Elenco</h2>
             <article>
-                <img src="images/elenco.jpg" alt="Elenco de Vikingos">
-                <p>La serie cuenta con un amplio elenco que interpreta a guerreros, reyes, exploradores y personajes importantes de la historia.</p>
+                <figure>
+                    <img src="images/elenco.jpg" alt="Elenco de Vikingos">
+                    <figcaption>Elenco de Vikingos</figcaption>
+                </figure>
+                <p>Las batallas llaman la atención, pero son los personajes los que dan ganas de seguir mirando. Cada uno tiene sus motivos para luchar, quedarse o partir.</p>
             </article>
             <article>
-                <img src="images/reparto.jpg" alt="Reparto de Vikingos">
-                <p>Conocé más sobre los actores y los personajes que forman parte de Vikingos.</p>
-                <a href="./pages/Elenco/">Ver elenco</a>
+                <figure>
+                    <img src="images/reparto.jpg" alt="Reparto de Vikingos">
+                    <figcaption>Reparto de Vikingos</figcaption>
+                </figure>
+                <p>¿Quién está detrás de Ragnar, Lagertha o Floki? Acá podés conocer a los actores que les dan vida.</p>
+                <a href="./pages/elenco/">Ver elenco</a>
             </article>
         </section>
         <aside>

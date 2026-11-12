@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,28 +11,46 @@
 <body>
     <header>
         <h1>Vikingos</h1>
-        <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="../serie/index.html">Sobre la serie</a>
-            <a href="../elenco/index.html">Elenco</a>
-            <a href="../temporadas/index.html">Temporadas</a>
-            <a href="../curiosidades/index.html">Curiosidades</a>
-            <a href="index.html">Contacto</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../pages/serie/index.html">Sobre la serie</a></li>
+                <li><a href="../../pages/elenco/index.html">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="../../pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="../../pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="../../pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="../../pages/curiosidades/index.html">Curiosidades</a></li>
+                <li><a href="../../pages/contacto/index.html" aria-current="page">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Contacto</h2>
-            <p>Si querés dejarnos un comentario sobre la serie Vikingos, completá el siguiente formulario.</p>
-            <form action="#" method="post">
+            <p>¿Tenés un personaje favorito o una escena que todavía recordás? También podés dejar una sugerencia para el sitio. Completá tus datos y escribí tu comentario.</p>
+            <form action="../confirmacion/index.html" method="get">
+                <p>Los campos con * son obligatorios.</p>
+                <fieldset>
+                    <legend>Tus datos</legend>
                 <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <label for="nombre">Nombre *:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="2" autocomplete="given-name">
                 </div>
                 <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email">
+                    <label for="apellido">Apellido *:</label>
+                    <input type="text" id="apellido" name="apellido" required minlength="2" autocomplete="family-name">
                 </div>
+                <div>
+                    <label for="email">Correo electrónico *:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tu comentario</legend>
                 <div>
                     <label for="motivo">Motivo:</label>
                     <select id="motivo" name="motivo">
@@ -42,10 +60,12 @@
                     </select>
                 </div>
                 <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+                    <label for="mensaje">Mensaje *:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="2000" placeholder="Contanos qué te gustaría compartir sobre Vikingos."></textarea>
                 </div>
-                <button type="button">Enviar</button>
+                </fieldset>
+                <p>Este formulario es una demostración del trabajo práctico: valida los campos y abre una confirmación, pero no envía ni guarda mensajes.</p>
+                <button type="submit">Continuar</button>
             </form>
         </section>
     </main>

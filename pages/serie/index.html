@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,43 +11,69 @@
 <body>
     <header>
         <h1>Vikingos</h1>
-        <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="index.html">Sobre la serie</a>
-            <a href="../elenco/index.html">Elenco</a>
-            <a href="../temporadas/index.html">Temporadas</a>
-            <a href="../curiosidades/index.html">Curiosidades</a>
-            <a href="../contacto/index.html">Contacto</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../pages/serie/index.html" aria-current="page">Sobre la serie</a></li>
+                <li><a href="../../pages/elenco/index.html">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="../../pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="../../pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="../../pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="../../pages/curiosidades/index.html">Curiosidades</a></li>
+                <li><a href="../../pages/contacto/index.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
    <main>
         <section>
             <h2>Sobre la serie</h2>
-            <img src="../../images/vikingos.jpg" alt="Serie Vikingos">
-            <p>Vikingos es una serie de televisión inspirada en las historias y leyendas de los pueblos nórdicos. La historia sigue principalmente a Ragnar Lothbrok, un guerrero vikingo que desea explorar nuevas tierras y descubrir lugares desconocidos.</p>
+            <figure>
+                <img src="../../images/vikingos.jpg" alt="Serie Vikingos">
+                <figcaption>Serie Vikingos</figcaption>
+            </figure>
+            <p>Vikingos nos acerca a las historias y leyendas nórdicas a través de Ragnar Lothbrok y su familia. Su punto de partida es sencillo: un hombre que quiere viajar más lejos de lo que su pueblo acostumbra.</p>
         </section>
-        <section>
+        <section class="historia">
             <h2>La historia</h2>
             <article>
                 <h3>El comienzo de Ragnar</h3>
-                <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
-                <p>Al comienzo de la serie, Ragnar es un granjero y guerrero que tiene una idea diferente a la de otros vikingos: navegar hacia el oeste. Su objetivo es encontrar nuevas tierras que puedan ser exploradas y conquistadas.</p>
-                <p>Sus viajes y decisiones hacen que poco a poco gane reconocimiento entre su pueblo y se convierta en una figura cada vez más importante.</p>
+                <figure>
+                    <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
+                    <figcaption>Ragnar Lothbrok</figcaption>
+                </figure>
+                <p>Al principio, Ragnar reparte sus días entre el trabajo en la granja y su vida como guerrero. Pero no se conforma con seguir las rutas de siempre: quiere cruzar el mar hacia el oeste.</p>
+                <p>Con cada viaje gana reconocimiento y también se hace de nuevos enemigos. Cuanto más poder consigue, más difíciles se vuelven las decisiones que debe tomar.</p>
             </article>
             <article>
                 <h3>Los viajes y las conquistas</h3>
-                <img src="../../images/ragnar_laghertha.jpg" alt="Ragnar y Lagertha">
-                <p>Durante la historia, los personajes realizan diferentes viajes y participan en numerosas batallas. También deben enfrentarse a conflictos entre familias, reyes y diferentes pueblos.</p>
-                <p>Las expediciones permiten mostrar el encuentro entre la cultura vikinga y otros pueblos de Europa.</p>
+                <figure>
+                    <img src="../../images/ragnar_lagherta.jpg" alt="Ragnar y Lagertha">
+                    <figcaption>Ragnar y Lagertha</figcaption>
+                </figure>
+                <p>No todos los conflictos se resuelven en el campo de batalla. Las promesas entre reyes y los problemas familiares pueden pesar tanto como una derrota.</p>
+                <p>Cuando llegan a otras tierras, también se encuentran con costumbres y creencias que ponen en duda lo que daban por seguro.</p>
             </article>
         </section>
         <section>
             <h2>Los vikingos</h2>
             <article>
-                <img src="../../images/reparto.jpg" alt="Guerreros vikingos">
-                <p>La serie muestra distintos aspectos de la vida de los vikingos, como sus viajes en barco, sus creencias, sus costumbres y su forma de combatir.</p>
-                <p>Aunque la historia utiliza personajes y acontecimientos relacionados con la historia nórdica, también incluye elementos provenientes de leyendas y relatos tradicionales.</p>
+                <figure>
+                    <img src="../../images/reparto.jpg" alt="Guerreros vikingos">
+                    <figcaption>Guerreros vikingos</figcaption>
+                </figure>
+                <p>Entre una expedición y otra hay espacio para la vida cotidiana: la familia, el trabajo, los rituales y las conversaciones sobre los dioses.</p>
+                <p>Conviene verla como una ficción inspirada en el pasado. La serie mezcla acontecimientos históricos con leyendas y se toma libertades para contar su historia.</p>
             </article>
+        </section>
+        <section class="multimedia">
+            <h2>Vikingos en video</h2>
+            <p>Escuchá «If I Had a Heart» de Fever Ray en su videoclip oficial.</p>
+            <iframe src="https://player.vimeo.com/video/2740700" title="Fever Ray: If I Had a Heart en Vimeo" width="800" height="450" ></iframe>
+            <p><a href="https://vimeo.com/2740700">Ver el video en Vimeo</a></p>
         </section>
         <aside>
             <h2>Dato de la serie</h2>

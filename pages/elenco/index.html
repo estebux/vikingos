@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serie Vikingos</title>
+    <title>Vikingos | Elenco</title>
      <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 <body>
     <header>
         <h1>Vikingos</h1>
-        <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="../serie/index.html">Sobre la serie</a>
-            <a href="index.html">Elenco</a>
-            <a href="../temporadas/index.html">Temporadas</a>
-            <a href="../curiosidades/index.html">Curiosidades</a>
-            <a href="../contacto/index.html">Contacto</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../pages/serie/index.html">Sobre la serie</a></li>
+                <li><a href="../../pages/elenco/index.html" aria-current="page">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="../../pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="../../pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="../../pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="../../pages/curiosidades/index.html">Curiosidades</a></li>
+                <li><a href="../../pages/contacto/index.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Elenco de Vikingos</h2>
-            <p>La serie Vikingos cuenta con un gran elenco de actores que dan vida a guerreros, reyes, exploradores y otros personajes que forman parte de la historia.</p>
-            <img src="../../images/elenco.jpg" alt="Elenco de la serie Vikingos">
+            <p>Una mirada de Ragnar, una respuesta de Lagertha o una risa de Floki alcanzan para reconocerlos. Conocé a los actores detrás de estos personajes.</p>
+            <figure>
+                <img src="../../images/elenco.jpg" alt="Elenco de la serie Vikingos">
+                <figcaption>Elenco de la serie Vikingos</figcaption>
+            </figure>
         </section>
-        <section class="elenco">
+        <section class="elenco tarjetas">
             <h2>Personajes principales</h2>
-            <article>
+            <article id="ragnar">
                 <h3>Ragnar Lothbrok</h3>
-                <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
+                <figure>
+                    <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
+                    <figcaption>Ragnar Lothbrok</figcaption>
+                </figure>
                 <p><strong>Actor:</strong> Travis Fimmel</p>
-                <p>Ragnar es un guerrero y explorador vikingo que sueña con descubrir nuevas tierras. Su ambición y curiosidad lo llevan a convertirse en uno de los personajes más importantes de la serie.</p>
+                <p>Travis Fimmel interpreta a un Ragnar curioso y ambicioso. Puede convencer a otros de seguirlo, aunque no siempre tenga claro qué precio pagará por sus planes.</p>
             </article>
-            <article>
+            <article id="lagertha">
                 <h3>Lagertha</h3>
-                <img src="../../images/ragnar_laghertha.jpg" alt="Ragnar y Lagertha">
+                <figure>
+                    <img src="../../images/ragnar_lagherta.jpg" alt="Ragnar y Lagertha">
+                    <figcaption>Ragnar y Lagertha</figcaption>
+                </figure>
                 <p><strong>Actriz:</strong> Katheryn Winnick</p>
-                <p>Lagertha es una gran guerrera y una de las figuras más importantes de la historia. Se caracteriza por su valentía, independencia y capacidad de liderazgo.</p>
+                <p>Katheryn Winnick da vida a Lagertha, una guerrera que busca decidir por sí misma. Su fuerza también aparece cuando debe afrontar pérdidas y empezar de nuevo.</p>
             </article>
-            <article>
+            <article id="floki">
                 <h3>Floki</h3>
-                <img src="../../images/floki.jpg" alt="Floki">
+                <figure>
+                    <img src="../../images/floki.jpg" alt="Floki">
+                    <figcaption>Floki</figcaption>
+                </figure>
                 <p><strong>Actor:</strong> Gustaf Skarsgård</p>
-                <p>Floki es uno de los amigos más cercanos de Ragnar. Es un hábil constructor de barcos y sus conocimientos son fundamentales para los viajes de los vikingos.</p>
+                <p>Gustaf Skarsgård interpreta a Floki, el constructor de barcos del grupo. Su humor y su lealtad a los dioses lo vuelven tan entrañable como difícil de entender.</p>
             </article>
         </section>
         <section>
             <h2>Un elenco que cambia con la historia</h2>
-            <img src="../../images/reparto.jpg" alt="Reparto de la serie Vikingos">
-            <p>A medida que avanza la serie aparecen nuevos personajes y otros adquieren mayor importancia. Las siguientes generaciones de la familia de Ragnar continúan gran parte de la historia.</p>
+            <figure>
+                <img src="../../images/reparto.jpg" alt="Reparto de la serie Vikingos">
+                <figcaption>Reparto de la serie Vikingos</figcaption>
+            </figure>
+            <p>Con el paso de las temporadas, los hijos de Ragnar ganan espacio. Traen sus propias ideas y conflictos, y cambian la relación entre los personajes que ya conocemos.</p>
         </section>
         <aside>
             <h2>¿Sabías que?</h2>

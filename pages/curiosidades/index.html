@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,31 @@
 <body>
     <header>
           <h1>Vikingos</h1>
-          <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="../serie/index.html">Sobre la serie</a>
-            <a href="../elenco/index.html">Elenco</a>
-            <a href="../temporadas/index.html">Temporadas</a>
-            <a href="index.html">Curiosidades</a>
-            <a href="../contacto/index.html">Contacto</a>
+          <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../pages/serie/index.html">Sobre la serie</a></li>
+                <li><a href="../../pages/elenco/index.html">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="../../pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="../../pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="../../pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="../../pages/curiosidades/index.html" aria-current="page">Curiosidades</a></li>
+                <li><a href="../../pages/contacto/index.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Curiosidades de Vikingos</h2>
-            <p>Vikingos combina historia, leyendas nórdicas y ficción. Conocé algunos datos interesantes sobre la serie y sus personajes.</p>
-            <img src="../../images/vikingos.jpg" alt="Personajes de la serie Vikingos">
+            <p>¿Cuánto hay de historia y cuánto de leyenda en Vikingos? Estos datos te ayudan a mirar con otros ojos a sus personajes y al mundo que los rodea.</p>
+            <figure>
+                <img src="../../images/vikingos.jpg" alt="Personajes de la serie Vikingos">
+                <figcaption>Personajes de la serie Vikingos</figcaption>
+            </figure>
         </section>
         <section class="curiosidades">
             <article>
@@ -31,7 +42,7 @@
             </article>
             <article>
                 <h3>2. Los barcos tienen un papel fundamental</h3>
-                <p>Los barcos permitieron a los vikingos recorrer grandes distancias. En la serie, Floki se destaca por su habilidad para construir embarcaciones.</p>
+                <p>Los viajes de Ragnar empiezan mucho antes de zarpar: hacen falta barcos capaces de llevarlo lejos. Por eso el trabajo de Floki tiene tanto peso en la historia.</p>
             </article>
             <article>
                 <h3>3. Lagertha es una guerrera legendaria</h3>
@@ -43,7 +54,7 @@
             </article>
             <article>
                 <h3>5. La mitología nórdica está muy presente</h3>
-                <p>Odín, Thor, Loki y Valhalla forman parte de las creencias que aparecen a lo largo de la historia y ayudan a comprender la cultura de los personajes.</p>
+                <p>Las referencias a Odín, Thor y Loki aparecen en charlas, rituales y decisiones. Para los personajes, sus dioses y la idea del Valhalla forman parte de la vida diaria.</p>
             </article>
             <article>
                 <h3>6. Vikingos tiene seis temporadas</h3>
@@ -52,12 +63,15 @@
         </section>
         <section>
             <h2>Ragnar y sus viajes</h2>
-            <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
-            <p>Uno de los temas principales de la serie es el deseo de Ragnar de conocer lugares nuevos. Sus viajes cambian tanto su propia historia como la de las personas que lo acompañan.</p>
+            <figure>
+                <img src="../../images/ragnar.jpg" alt="Ragnar Lothbrok">
+                <figcaption>Ragnar Lothbrok</figcaption>
+            </figure>
+            <p>Ragnar mira el mar y ve una posibilidad. Esa inquietud lo mueve a salir de lo conocido, aunque sus viajes también cambien la vida de quienes se quedan esperando.</p>
         </section>
         <aside>
             <h2>¿Querés conocer más?</h2>
-            <p>Podés recorrer las demás secciones del sitio para conocer los personajes, las temporadas y la historia de Vikingos.</p>
+            <p>Si estos detalles te dieron ganas de seguir, podés recorrer la guía de temporadas o conocer mejor al elenco.</p>
             <a href="../temporadas/">Ver temporadas</a>
         </aside>
     </main>

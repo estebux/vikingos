@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 body{
     background-color:#1b1b1b;
@@ -54,7 +55,7 @@ article{
     margin-bottom:30px;
 }
 section:first-child img{
-    width:850px;
+    width:100%;
 }
 aside{
     background-color:#292929;
@@ -100,7 +101,8 @@ input,select,textarea{
 }
 input:focus,select:focus,textarea:focus{
     border-color:#c79b45;
-    outline:none;
+    outline:2px solid #c79b45;
+    outline-offset:3px;
 }
 textarea{
     resize:vertical;
@@ -131,4 +133,144 @@ button:hover{
 }
 .temporadas article strong{
     color:#c79b45;
+}
+nav ul{
+    list-style:none;
+}
+nav > ul > li{
+    display:inline-block;
+    position:relative;
+    vertical-align:top;
+}
+nav a{
+    display:block;
+    padding:12px 10px;
+    margin:0;
+}
+nav a[aria-current="page"]{
+    color:#c79b45;
+    border-bottom:2px solid #c79b45;
+}
+nav a:focus{
+    outline:2px solid #c79b45;
+    outline-offset:-2px;
+}
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:160px;
+    background-color:#111;
+    border:1px solid #c79b45;
+    text-align:left;
+    z-index:10;
+}
+nav li:hover > .submenu,
+nav li:focus-within > .submenu{
+    display:block;
+}
+figure{
+    margin:15px 0;
+}
+figure img{
+    display:block;
+    width:100%;
+}
+figcaption{
+    padding:8px;
+    background-color:#292929;
+    color:#ccc;
+    font-size:14px;
+}
+.historia article{
+    overflow:auto;
+    padding:20px;
+    background-color:#252525;
+}
+.historia figure{
+    float:left;
+    width:38%;
+    margin:0 22px 12px 0;
+}
+.tarjetas > article{
+    display:inline-block;
+    vertical-align:top;
+    width:31%;
+    margin-right:1%;
+    padding:15px;
+    background-color:#252525;
+}
+.temporadas > article,
+.curiosidades > article{
+    display:inline-block;
+    vertical-align:top;
+    width:48%;
+    margin-right:1%;
+    padding:20px;
+}
+.curiosidades > article{
+    border-top:2px solid #c79b45;
+    background-color:#252525;
+}
+main a{
+    color:#e0b75e;
+}
+main a:hover{
+    text-decoration:none;
+}
+article[id]{
+    scroll-margin-top:20px;
+}
+.temporadas article:nth-child(even){
+    background-color:#2d2b26;
+}
+fieldset{
+    border:1px solid #555;
+    padding:18px;
+    margin:18px 0;
+    min-width:0;
+}
+legend{
+    color:#c79b45;
+    padding:0 8px;
+}
+input:required,
+textarea:required{
+    border-left:3px solid #c79b45;
+}
+.boton{
+    display:inline-block;
+    padding:12px 20px;
+    background-color:#c79b45;
+    color:#111;
+    text-decoration:none;
+    font-weight:bold;
+}
+.multimedia iframe{
+    display:block;
+    max-width:100%;
+    border:0;
+}
+@media (max-width:700px){
+    main{
+        width:90%;
+    }
+    .tarjetas > article,
+    .temporadas > article,
+    .curiosidades > article{
+        width:100%;
+        margin-right:0;
+    }
+    .historia figure{
+        float:none;
+        width:100%;
+        margin:0 0 15px;
+    }
+    form{
+        padding:15px;
+    }
+    .multimedia iframe{
+        height:240px;
+    }
 }
