@@ -247,6 +247,23 @@ textarea:required{
     text-decoration:none;
     font-weight:bold;
 }
+.pagina-error{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:24px;
+    padding:20px;
+    background-color:#252525;
+    border-top:2px solid #c79b45;
+}
+.pagina-error > div{
+    flex:1 1 280px;
+}
+.pagina-error > img{
+    max-width:280px;
+    width:100%;
+    margin-inline:auto;
+}
 .multimedia iframe{
     display:block;
     max-width:100%;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikingos | 404 - Página no encontrada</title>
+    <base href="./">
+    <script>
+        const base = document.querySelector("base");
+        const hostname = window.location.hostname;
+
+        if (hostname === "estebux.github.io") {
+            base.href = "/vikingos/";
+        } else if (hostname === "127.0.0.1" || hostname === "localhost") {
+            base.href = "/";
+        }
+    </script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vikingos</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/serie/index.html">Sobre la serie</a></li>
+                <li><a href="pages/elenco/index.html">Elenco</a>
+                    <ul class="submenu">
+                        <li><a href="pages/elenco/index.html#ragnar">Ragnar</a></li>
+                        <li><a href="pages/elenco/index.html#lagertha">Lagertha</a></li>
+                        <li><a href="pages/elenco/index.html#floki">Floki</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/temporadas/index.html">Temporadas</a></li>
+                <li><a href="pages/curiosidades/index.html">Curiosidades</a></li>
+                <li><a href="pages/contacto/index.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pagina-error">
+            <div>
+                <h2>404 · Página no encontrada</h2>
+                <p>La página que buscás no existe o cambió de dirección. Podés volver al inicio para seguir explorando el mundo de Vikingos.</p>
+                <p><a class="boton" href="index.html">Volver al inicio</a></p>
+            </div>
+            <img src="images/vikingos.jpg" width="600" height="800" alt="Un barco vikingo en llamas bajo el emblema de la serie">
+        </section>
+    </main>
+    <footer>
+        <p>Trabajo práctico - Programación Web I - Da Vinci - Esteban Joel Pardo</p>
+        <p>Sitio sobre la serie Vikingos</p>
+    </footer>
+</body>
+
+</html>
