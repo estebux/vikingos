@@ -4,6 +4,9 @@
     box-sizing:border-box;
 }
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color:#1b1b1b;
     color:#e8e8e8;
     font-family:Arial,sans-serif;
@@ -32,6 +35,7 @@ main{
     width:80%;
     max-width:1000px;
     margin:auto;
+    flex: auto;
 }
 section{
     margin:30px 0;
