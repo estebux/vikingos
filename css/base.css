@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#1b1b1b;
+    color:#e8e8e8;
+    font-family:"Source Sans 3",Arial,sans-serif;
+}
+h1,h2,h3{
+    font-family:"Cinzel",Georgia,serif;
+    font-weight:600;
+}
+
+h1{
+    color:#c79b45;
+    font-size:40px;
+    font-weight:700;
+}
+
+h2{
+    color:#c79b45;
+    margin-bottom:15px;
+}
+h3{
+    margin:10px 0;
+}
+p{
+    line-height:1.5;
+    margin:10px 0;
+}
+main p{
+    font-family:"Crimson Text",Georgia,serif;
+    font-size:18px;
+    line-height:1.6;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+
+main a{
+    color:#e0b75e;
+}
+main a:hover{
+    text-decoration:none;
+}

@@ -1,0 +1,114 @@
+.temporadas article{
+    background-color:#252525;
+    border-left:4px solid #c79b45;
+    padding:20px;
+    margin-bottom:15px;
+}
+.temporadas article h3{
+    color:#c79b45;
+    font-size:22px;
+    margin-top:0;
+}
+.temporadas article strong{
+    color:#c79b45;
+}
+
+figure{
+    margin:15px 0;
+}
+figure img{
+    display:block;
+    width:100%;
+}
+figcaption{
+    padding:8px;
+    background-color:#292929;
+    color:#ccc;
+    font-size:14px;
+}
+.historia article{
+    overflow:auto;
+    padding:20px;
+    background-color:#252525;
+}
+.historia figure{
+    float:left;
+    width:38%;
+    margin:0 22px 12px 0;
+}
+.tarjetas > article{
+    display:inline-block;
+    vertical-align:top;
+    width:31%;
+    margin-right:1%;
+    padding:15px;
+    background-color:#252525;
+}
+.temporadas > article,
+.curiosidades > article{
+    display:inline-block;
+    vertical-align:top;
+    width:48%;
+    margin-right:1%;
+    padding:20px;
+}
+.curiosidades > article{
+    border-top:2px solid #c79b45;
+    background-color:#252525;
+}
+
+article[id]{
+    scroll-margin-top:20px;
+}
+.temporadas article:nth-child(even){
+    background-color:#2d2b26;
+}
+
+.boton{
+    display:inline-block;
+    padding:12px 20px;
+    background-color:#c79b45;
+    color:#111;
+    text-decoration:none;
+    font-weight:bold;
+}
+.pagina-error{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:24px;
+    padding:20px;
+    background-color:#252525;
+    border-top:2px solid #c79b45;
+}
+.pagina-error > div{
+    flex:1 1 280px;
+}
+.pagina-error > img{
+    max-width:280px;
+    width:100%;
+    margin-inline:auto;
+}
+.reproductor-audio iframe,
+.multimedia iframe{
+    display:block;
+    max-width:100%;
+    border:0;
+}
+
+@media (max-width:700px){
+    .tarjetas > article,
+    .temporadas > article,
+    .curiosidades > article{
+        width:100%;
+        margin-right:0;
+    }
+    .historia figure{
+        float:none;
+        width:100%;
+        margin:0 0 15px;
+    }
+    .multimedia iframe{
+        height:240px;
+    }
+}
