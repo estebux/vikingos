@@ -151,6 +151,10 @@ button:hover{
 .temporadas article strong{
     color:#c79b45;
 }
+.menu-control,
+.menu-toggle{
+    display:none;
+}
 nav ul{
     list-style:none;
 }
@@ -288,6 +292,91 @@ textarea:required{
     border:0;
 }
 @media (max-width:700px){
+    nav{
+        position:relative;
+    }
+    .menu-control{
+        display:block;
+        position:absolute;
+        width:1px;
+        height:1px;
+        clip-path:inset(50%);
+    }
+    .menu-toggle{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        margin:0;
+        padding:12px 25px;
+        color:#111;
+        background-color:#c79b45;
+        border-radius:4px;
+        cursor:pointer;
+    }
+    .menu-control:focus-visible + .menu-toggle{
+        outline:2px solid #c79b45;
+        outline-offset:3px;
+    }
+    .menu-icono{
+        position:relative;
+        width:18px;
+        height:14px;
+        background:linear-gradient(currentColor,currentColor) center / 100% 2px no-repeat;
+    }
+    .menu-icono::before,
+    .menu-icono::after{
+        content:"";
+        position:absolute;
+        inset:6px 0 auto;
+        height:2px;
+        background-color:currentColor;
+        transition:transform .4s ease;
+    }
+    .menu-icono::before{
+        transform:translateY(-6px);
+    }
+    .menu-icono::after{
+        transform:translateY(6px);
+    }
+    .menu-control:checked + .menu-toggle .menu-icono{
+        background:none;
+    }
+    .menu-control:checked + .menu-toggle .menu-icono::before{
+        transform:rotate(45deg);
+    }
+    .menu-control:checked + .menu-toggle .menu-icono::after{
+        transform:rotate(-45deg);
+    }
+    .menu-toggle + ul{
+        position:absolute;
+        inset:100% 0 auto;
+        z-index:20;
+        max-height:65vh;
+        overflow-y:auto;
+        background-color:#111;
+        border:1px solid #c79b45;
+        transition:opacity .4s ease,transform .4s ease,visibility .4s;
+    }
+    .menu-control:not(:checked) + .menu-toggle + ul{
+        opacity:0;
+        transform:translateY(-20px);
+        visibility:hidden;
+        pointer-events:none;
+    }
+    nav > ul{
+        margin-top:10px;
+        text-align:left;
+    }
+    nav > ul > li{
+        display:block;
+    }
+    nav .submenu{
+        display:block;
+        position:static;
+        width:auto;
+        margin-left:20px;
+        border:0;
+    }
     main{
         width:90%;
     }
@@ -307,5 +396,12 @@ textarea:required{
     }
     .multimedia iframe{
         height:240px;
+    }
+}
+@media (max-width:700px) and (prefers-reduced-motion:reduce){
+    .menu-toggle + ul,
+    .menu-icono::before,
+    .menu-icono::after{
+        transition:none;
     }
 }

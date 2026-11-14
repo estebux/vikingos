@@ -11,7 +11,12 @@
     <header>
         <h1>Vikingos</h1>
         <nav aria-label="Navegación principal">
-            <ul>
+            <input class="menu-control" type="checkbox" id="menu-control" aria-controls="menu-principal">
+            <label class="menu-toggle" for="menu-control">
+                <span class="menu-icono" aria-hidden="true"></span>
+                Menú
+            </label>
+            <ul id="menu-principal">
                 <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="pages/serie/index.html">Sobre la serie</a></li>
                 <li><a href="pages/elenco/index.html">Elenco</a>
